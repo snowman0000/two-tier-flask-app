@@ -19,7 +19,7 @@ pipeline {
                     sh '''
                     echo "$PASS" | docker login -u "$USER" --password-stdin
                     docker build -t snowman0000/flaskapp:latest .
-                    docker push snowmna0000/flaskapp:latest
+                    docker push snowman0000/flaskapp:latest
                     '''
                 }
             }
