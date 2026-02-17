@@ -23,7 +23,7 @@ services:
       start_period: 60s
 
   flask-app:
-    image: flaskapp
+    image: snowmna0000/flaskapp:latest
     container_name: flask-app
     ports:
       - "5000:5000"
