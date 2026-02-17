@@ -12,7 +12,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 withCredentials([usernamePassword(
-                    credentialsId: 'dockerCredential',
+                    credentialsId: 'dockerCred',
                     usernameVariable: 'USER',
                     passwordVariable: 'PASS'
                 )]) {
